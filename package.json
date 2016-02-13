@@ -1,0 +1,39 @@
+{
+  "name": "datapoints",
+  "description": "DataPoints.global",
+  "version": "0.0.1",
+  "author": {
+    "name": "ASPECTRON Inc.",
+    "email": "info@aspectron.com"
+  },
+  "dependencies": {
+    "underscore": "*",
+    "request": "*"
+  },
+  "keywords": [
+    "data",
+    "datapoints"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/aspectron/datapoints-nodejs"
+  },
+  "main": "datapoints.js",
+  "files": [
+    "datapoints.js",
+    "LICENSE",
+    "README.md"
+  ],
+  "scripts": {
+    "prepublish": "npm prune"
+  },
+  "engines": {
+    "node": "*"
+  },
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/aspectron/datapoints-nodejs/issues"
+  },
+  "license": "MIT",
+  "homepage": "https://datapoints.global"
+}
