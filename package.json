@@ -21,6 +21,8 @@
   "main": "datapoints.js",
   "files": [
     "datapoints.js",
+    "format.js",
+    "test.js",
     "LICENSE",
     "README.md"
   ],
