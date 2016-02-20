@@ -58,6 +58,11 @@ function Datapoints(options){
 	* }
 	*/
 	self.setVar = function(data, callback){
+		if (_.isArray(data)) {
+			data = {
+				items: data
+			}
+		};
 		self._request({url: API_END_POINT + "var/save", form: data, json: true}, callback);
 	}
 

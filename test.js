@@ -18,7 +18,17 @@ apiClient.getVars(callback("getVars"));
 /**
  * Add/Edit var
  */
-//apiClient.setVar({uuid:"70d950f0-c9d7-11e5-9ce9-fbb1faf1d194", name: "VAR BY API", value: "-VALUE-", color: "#FEE720" }, callback("saveVar"));
+ var items = [{
+	name: "A-UPDATED",
+	value: "VAR BY API 1",
+	color: "#FF0000",
+	uuid: "692bc730-d7b4-11e5-8ebb-cf134e9221ae"
+},{
+	name: "B1",
+	value: "VAR BY API 2",
+	color: "#00FF00"
+}];
+apiClient.setVar(items, callback("saveVar"));
 
 
 /**
