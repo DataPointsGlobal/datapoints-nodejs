@@ -17,7 +17,7 @@ function Datapoints(options){
 	var version = options.version;
 	var key 	= options.key;
 	var secret 	= options.secret;
-	var serverUrl = "https://datapoints.global";
+	var serverUrl = "https://api.datapoints.global";
 	if (options.url)
 		serverUrl = options.url;
 
