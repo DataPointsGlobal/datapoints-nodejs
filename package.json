@@ -1,10 +1,10 @@
 {
   "name": "datapoints",
-  "description": "DataPoints.global",
-  "version": "0.0.3",
+  "description": "datapoints.global",
+  "version": "0.0.4",
   "author": {
-    "name": "ASPECTRON Inc.",
-    "email": "info@aspectron.com"
+    "name": "DataPoints Inc.",
+    "email": "support@datapoints.global"
   },
   "dependencies": {
     "underscore": "*",

@@ -17,7 +17,7 @@ function Datapoints(options){
 	var version = options.version;
 	var key 	= options.key;
 	var secret 	= options.secret;
-	var serverUrl = "https://datapoints.global";
+	var serverUrl = "https://api.datapoints.global";
 	if (options.url)
 		serverUrl = options.url;
 
@@ -60,7 +60,7 @@ function Datapoints(options){
 	*	}
 	* }
 	*/
-	self.setVar = function(data, callback){
+	self.set = self.setVar = function(data, callback){
 		if (_.isArray(data)) {
 			data = {
 				items: data
@@ -69,7 +69,7 @@ function Datapoints(options){
 		self._request({url: API_END_POINT + "var/save", form: data, json: true}, callback);
 	}
 
-	self.deleteVar = function(uuid, callback){
+	self.remove = self.deleteVar = function(uuid, callback){
 		self._request({url: API_END_POINT + "var/delete", form: {uuid: uuid}, json: true}, callback);
 	}
 
