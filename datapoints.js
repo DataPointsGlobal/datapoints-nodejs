@@ -21,7 +21,10 @@ function Datapoints(options){
 	if (options.url)
 		serverUrl = options.url;
 
-	var API_END_POINT = serverUrl+"/api/"+version+"/"+key+"/"+secret+"/";
+	if(serverUrl.slice(-1) !== '/')
+		serverUrl += '/'; 
+
+	var API_END_POINT = serverUrl+"api/"+version+"/"+key+"/"+secret+"/";
 
 	//###########################################################
 	// Format utility functions
